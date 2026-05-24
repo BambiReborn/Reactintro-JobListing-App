@@ -50,4 +50,3 @@ src/
 - How to create and use React components
 - How to pass data between components using props
 - How to use useState to show and hide content
-- How to write basic CSS and make a page responsive
