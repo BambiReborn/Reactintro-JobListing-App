@@ -1,0 +1,130 @@
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 30px;
+}
+
+.job-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 4px solid #4a90e2;
+  border-radius: 8px;
+  padding: 16px;
+  width: 30rem;
+  margin-bottom: 16px;
+}
+
+.job-card h2 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 3px 0;
+}
+
+.details-box {
+  margin-top: 10px;
+  background: #f0f6ff;
+  border-left: 3px solid #4a90e2;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #444;
+}
+
+button {
+  margin-top: 12px;
+  padding: 6px 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+
+
+
+
+/* RESPONSIVENESS*/
+/*--------------*/
+
+/* TABLET */
+
+@media (max-width: 769px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILES */
+/* BIG */ 
+
+@media (max-width: 426px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    width: 23rem;
+  }
+}
+
+/* MEDIUM */
+
+@media (max-width: 376px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    padding: 12px;
+    width: 20rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* SMALL */
+
+@media (max-width: 321px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    padding: 10px;
+    width: 18rem;
+  }
+
+  .job-card h2 {
+    font-size: 15px;
+  }
+
+  .job-card p {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 12px;
+  }
+}
